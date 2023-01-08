@@ -1,8 +1,13 @@
-import { ChildrenProps } from '@interfaces/props';
-import { createContext, useState } from 'react';
+import { createContext, Dispatch, SetStateAction, useState } from 'react';
+import { ChildrenProps } from '../types/props';
 import Header from './global/Header';
 
-const AppContext = createContext({});
+export type ContextType = {
+  nav: boolean;
+  setNav: Dispatch<SetStateAction<boolean>>;
+};
+
+export const AppContext = createContext({} as ContextType);
 
 export default function Layout({ children }: ChildrenProps) {
   const [nav, setNav] = useState(false);
@@ -13,4 +18,4 @@ export default function Layout({ children }: ChildrenProps) {
       {children}
     </AppContext.Provider>
   );
-};
+}
