@@ -1,3 +1,4 @@
+@import url(//db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold);
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,5 +13,14 @@ html,
 body, #__next {
   max-width: 100vw;
   overflow-x: hidden;
+  font-family: 'SoDo Sans SemiBold';
+}
+
+.hamburg-menu {
+  @apply flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-slate-50 to-gray-500 text-gray-700;
+}
+
+.links-menu {
+  @apply px-5 cursor-pointer font-semibold uppercase hover:scale-105 hover:text-gray-500;
 }
 

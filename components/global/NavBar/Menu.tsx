@@ -1,7 +1,8 @@
 import { AppContext } from '@components/Layout';
 import { MenuProps } from '@interfaces/props';
 import { useContext } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { AiOutlineMenu } from 'react-icons/ai';
+import { FaTimes } from 'react-icons/fa';
 import Links from './Links';
 
 export default function Menu({ links }: MenuProps) {
@@ -13,25 +14,25 @@ export default function Menu({ links }: MenuProps) {
         <Links
           links={links}
           classList='hidden md:flex'
-          classItem='px-5 cursor-pointer font-medium text-gray-400 hover:scale-105 hover:text-gray-100'
+          classItem='links-menu'
         />
       </div>
       <div
         onClick={() => setNav(!nav)}
-        className='cursor-pointer pr-5 z-10 text-gray-400 md:hidden'
+        className='cursor-pointer pr-5 text-gray-500 md:hidden'
       >
-        {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+        {nav ? <FaTimes size={23} /> : <AiOutlineMenu size={23} />}
       </div>
-      <div>
-        {nav && (
+      {nav && (
+        <div>
           <Links
             links={links}
-            classList='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-400'
+            classList='hamburg-menu'
             classItem='px-4 cursor-pointer capitalize py-6 text-3xl'
             onClick={() => setNav(!nav)}
           />
-        )}
-      </div>
+        </div>
+      )}
     </menu>
   );
 }
