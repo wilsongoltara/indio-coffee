@@ -1,4 +1,4 @@
-const Menu = () => {
+export default function Menu() {
   return (
     <menu>
       <ul className="flex w-auto">
@@ -9,5 +9,3 @@ const Menu = () => {
     </menu>
   );
 };
-
-export default Menu;

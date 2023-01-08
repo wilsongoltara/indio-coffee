@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const Logo = () => {
+export default function Logo() {
   return (
     <Link href='/'>
       <svg
@@ -27,5 +27,3 @@ const Logo = () => {
     </Link>
   );
 };
-
-export default Logo;

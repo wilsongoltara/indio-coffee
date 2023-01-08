@@ -1,7 +1,7 @@
 import Logo from '@assets/Logo';
 import Menu from './Menu';
 
-const NavBar = () => {
+export default function NavBar() {
   return (
     <nav className='flex justify-between items-center'>
       <Logo />
@@ -9,5 +9,3 @@ const NavBar = () => {
     </nav>
   );
 };
-
-export default NavBar;

@@ -1,6 +1,6 @@
 import NavBar from '../NavBar';
 
-const Header = () => {
+export default function Header () {
   return (
     <header className='w-full z-[3] px-5 shadow-md'>
       <NavBar />
@@ -8,4 +8,3 @@ const Header = () => {
   );
 };
 
-export default Header;
