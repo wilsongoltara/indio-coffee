@@ -1,4 +1,3 @@
-export type HeaderProps = {
-  Logo: () => JSX.Element,
-  NavBar: () => JSX.Element,
-};
+export type ChildrenProps = {
+  children: JSX.Element;
+} 

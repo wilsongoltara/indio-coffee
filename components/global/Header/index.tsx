@@ -1,12 +1,9 @@
-import { HeaderProps } from '@interfaces/props';
+import NavBar from '../NavBar';
 
-const Header = ({ Logo, NavBar }: HeaderProps) => {
+const Header = () => {
   return (
-    <header>
-      <div>
-        <Logo />
-        <NavBar />
-      </div>
+    <header className='w-full z-[3] px-5 shadow-md'>
+      <NavBar />
     </header>
   );
 };
