@@ -1,11 +1,13 @@
+import Link from 'next/link';
+
 const Logo = () => {
   return (
-    <>
+    <Link href='/'>
       <svg
-        className='block'
         xmlns='http://www.w3.org/2000/svg'
-        width='45px'
+        width='40px'
         height='10%'
+        className='block'
         viewBox='0 0 62 62'
         focusable='false'
       >
@@ -22,7 +24,7 @@ const Logo = () => {
           />
         </g>
       </svg>
-    </>
+    </Link>
   );
 };
 

@@ -1,11 +1,11 @@
+import Logo from '@assets/Logo';
+import Menu from './Menu';
+
 const NavBar = () => {
   return (
-    <nav>
-      <ul>
-        <li>link 1</li>
-        <li>link 1</li>
-        <li>link 1</li>
-      </ul>      
+    <nav className='flex justify-between items-center'>
+      <Logo />
+      <Menu />
     </nav>
   );
 };
