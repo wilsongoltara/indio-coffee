@@ -20,7 +20,7 @@
     "incremental": true,
     "paths": {
       "@interfaces/*": [
-        "./interfaces/*"
+        "./types/*"
       ],
       "@components/*": [
         "./components/*"
