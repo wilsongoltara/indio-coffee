@@ -1,5 +1,6 @@
 import Logo from '@assets/Logo';
 import { links } from '@lib/links';
+import ButtonsBar from './ButtonsBar';
 import Menu from './Menu';
 
 export default function NavBar() {
@@ -9,6 +10,7 @@ export default function NavBar() {
         <Logo />
         <Menu links={links}/>
       </div>
+      <ButtonsBar />
     </nav>
   );
 };

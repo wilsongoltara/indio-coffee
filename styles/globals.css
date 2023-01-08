@@ -19,6 +19,6 @@ body, #__next {
 }
 
 .links-menu {
-  @apply px-5 cursor-pointer font-semibold uppercase hover:scale-105 hover:text-gray-500;
+  @apply px-5 cursor-pointer font-bold uppercase hover:text-green-600;
 }
 
