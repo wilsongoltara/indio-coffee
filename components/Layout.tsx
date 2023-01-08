@@ -1,13 +1,16 @@
-import Header from './global/Header';
 import { ChildrenProps } from '@interfaces/props';
+import { createContext, useState } from 'react';
+import Header from './global/Header';
 
-const Layout = ({ children }: ChildrenProps) => {
+const AppContext = createContext({});
+
+export default function Layout({ children }: ChildrenProps) {
+  const [nav, setNav] = useState(false);
+
   return (
-    <>
+    <AppContext.Provider value={{ nav, setNav }}>
       <Header />
       {children}
-    </>
+    </AppContext.Provider>
   );
 };
-
-export default Layout;
