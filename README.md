@@ -20,7 +20,7 @@ Antes de iniciar, você precisa ter instalados o [Git](https://git-scm.com) e o 
 $ git clone https://github.com/wilsongoltara/indio-coffee
 
 # Access
-$ cd portfolio-nextjs
+$ cd indio-coffee
 
 # Install the dependencies
 $ npm install
