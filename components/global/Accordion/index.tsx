@@ -1,9 +1,9 @@
-import { AccordionsProps } from '@interfaces/props';
+import { LinksFooterProps } from '@interfaces/props';
 import { SyntheticEvent, useState } from 'react';
 import Links from '../Links';
 import { Accordion, AccordionDetails, AccordionSummary } from './Styles';
 
-export default function Accordions({ linksFooter }: AccordionsProps) {
+export default function Accordions({ linksFooter }: LinksFooterProps) {
   const [expanded, setExpanded] = useState<string | false>('panel1');
 
   const handleChange =
@@ -12,7 +12,7 @@ export default function Accordions({ linksFooter }: AccordionsProps) {
     };
 
   return (
-    <div className='md:invisible'>
+    <div className='lg:hidden'>
       {linksFooter?.map(({ nameAccordion, links }, index) => (
         <Accordion
           key={index}

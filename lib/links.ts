@@ -134,3 +134,26 @@ export const linksFooter: LinksFooter[] = [
     ],
   },
 ];
+
+export const linksExtras: Link[] = [
+  {
+    link: 'privacy Notice',
+    href: '/',
+  },
+  {
+    link: 'terms of use',
+    href: '/',
+  },
+  {
+    link: 'do not share my personal information',
+    href: '/',
+  },
+  {
+    link: 'CA supply chain act',
+    href: '/',
+  },
+  {
+    link: 'Cookie Preferences',
+    href: '/',
+  },
+];
