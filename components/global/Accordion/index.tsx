@@ -12,7 +12,7 @@ export default function Accordions({ linksFooter }: AccordionsProps) {
     };
 
   return (
-    <div className='md:invisible text-base capitalize font-[530] font'>
+    <div className='md:invisible text-base capitalize font-[530] my-5'>
       {linksFooter?.map(({ nameAccordion, links }, index) => (
         <Accordion
           key={index}
