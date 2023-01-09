@@ -1,5 +1,8 @@
+import { linksExtras, linksFooter } from '@lib/links';
 import { createContext, Dispatch, SetStateAction, useState } from 'react';
 import { ChildrenProps } from '../types/props';
+import Content from './global/Content';
+import Footer from './global/Footer';
 import Header from './global/Header';
 
 export type ContextType = {
@@ -15,7 +18,8 @@ export default function Layout({ children }: ChildrenProps) {
   return (
     <AppContext.Provider value={{ nav, setNav }}>
       <Header />
-      {children}
+      <Content>{children}</Content>
+      <Footer linksFooter={linksFooter} linksExtras={linksExtras}/>
     </AppContext.Provider>
   );
 }

@@ -8,9 +8,9 @@ const myFont = localFont({ src: '../public/font/SoDoSans-Regular.woff2' });
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <Layout>
-      <main className={myFont.className}>
+      <div className={myFont.className}>
         <Component {...pageProps} />
-      </main>
+      </div>
     </Layout>
   );
 }

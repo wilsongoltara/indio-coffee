@@ -3,7 +3,7 @@ import { MenuProps } from '@interfaces/props';
 import { useContext } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { FaTimes } from 'react-icons/fa';
-import Links from './Links';
+import Links from '../Links';
 
 export default function Menu({ links }: MenuProps) {
   const { nav, setNav } = useContext(AppContext);
