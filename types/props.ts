@@ -23,6 +23,11 @@ export type LinksFooter = {
   links: Link[];
 };
 
-export type AccordionsProps = {
+export type LinksFooterProps = {
   linksFooter: LinksFooter[];
 }
+
+export type FooterProps = {
+  linksFooter: LinksFooter[];
+  linksExtras: Link[]
+};

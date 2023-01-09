@@ -1,3 +1,4 @@
+import { linksExtras, linksFooter } from '@lib/links';
 import { createContext, Dispatch, SetStateAction, useState } from 'react';
 import { ChildrenProps } from '../types/props';
 import Content from './global/Content';
@@ -18,7 +19,7 @@ export default function Layout({ children }: ChildrenProps) {
     <AppContext.Provider value={{ nav, setNav }}>
       <Header />
       <Content>{children}</Content>
-      <Footer />
+      <Footer linksFooter={linksFooter} linksExtras={linksExtras}/>
     </AppContext.Provider>
   );
 }
