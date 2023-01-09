@@ -5,8 +5,8 @@ export type Link = {
 
 export type LinksProps = {
   links: Link[];
-  classList: string;
-  classItem: string;
+  classList?: string;
+  classItem?: string;
   onClick?: () => void;
 };
 
@@ -17,3 +17,12 @@ export type MenuProps = {
 export type ChildrenProps = {
   children: JSX.Element;
 };
+
+export type LinksFooter = {
+  nameAccordion: string;
+  links: Link[];
+};
+
+export type AccordionsProps = {
+  linksFooter: LinksFooter[];
+}
