@@ -1,5 +1,6 @@
 import { createContext, Dispatch, SetStateAction, useState } from 'react';
 import { ChildrenProps } from '../types/props';
+import Content from './global/Content';
 import Header from './global/Header';
 
 export type ContextType = {
@@ -15,7 +16,7 @@ export default function Layout({ children }: ChildrenProps) {
   return (
     <AppContext.Provider value={{ nav, setNav }}>
       <Header />
-      {children}
+      <Content>{children}</Content>
     </AppContext.Provider>
   );
 }

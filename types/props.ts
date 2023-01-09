@@ -8,12 +8,12 @@ export type LinksProps = {
   classList: string;
   classItem: string;
   onClick?: () => void;
-}
+};
 
 export type MenuProps = {
   links: Link[];
-}
+};
 
 export type ChildrenProps = {
   children: JSX.Element;
-}
+};
