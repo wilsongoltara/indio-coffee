@@ -1,9 +1,10 @@
-import CustomizedAccordions from './Accordion';
+import { linksFooter } from '@lib/links';
+import CustomizedAccordions from '../Accordion';
 
 export default function Footer() {
   return (
     <footer className=''>
-      <CustomizedAccordions />
+      <CustomizedAccordions linksFooter={linksFooter}/>
     </footer>
   );
 }
