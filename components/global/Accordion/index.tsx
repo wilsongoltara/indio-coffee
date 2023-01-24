@@ -1,5 +1,5 @@
-import { LinksFooterProps } from '@interfaces/props';
 import { SyntheticEvent, useState } from 'react';
+import { LinksFooterProps } from '../../../interfaces/props';
 import Links from '../Links';
 import { Accordion, AccordionDetails, AccordionSummary } from './Styles';
 

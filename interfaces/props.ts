@@ -1,33 +1,33 @@
-export type Link = {
+export interface Link {
   link: string;
   href: string;
 };
 
-export type LinksProps = {
+export interface LinksProps {
   links: Link[];
   classList?: string;
   classItem?: string;
   onClick?: () => void;
 };
 
-export type MenuProps = {
+export interface MenuProps {
   links: Link[];
 };
 
-export type ChildrenProps = {
+export interface ChildrenProps {
   children: JSX.Element;
 };
 
-export type LinksFooter = {
+export interface LinksFooter {
   nameAccordion: string;
   links: Link[];
 };
 
-export type LinksFooterProps = {
+export interface LinksFooterProps {
   linksFooter: LinksFooter[];
 }
 
-export type FooterProps = {
+export interface FooterProps {
   linksFooter: LinksFooter[];
   linksExtras: Link[]
 };

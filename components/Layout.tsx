@@ -1,6 +1,6 @@
 import { linksExtras, linksFooter } from '@lib/links';
 import { createContext, Dispatch, SetStateAction, useState } from 'react';
-import { ChildrenProps } from '../types/props';
+import { ChildrenProps } from '../interfaces/props';
 import Content from './global/Content';
 import Footer from './global/Footer';
 import Header from './global/Header';
