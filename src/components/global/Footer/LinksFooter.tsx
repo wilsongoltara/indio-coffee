@@ -1,4 +1,4 @@
-import { LinksFooterProps } from '../../../interfaces/props';
+import { LinksFooterProps } from '@interfaces/props';
 import Links from '../Links';
 
 export default function LinksFooter({ linksFooter }: LinksFooterProps) {

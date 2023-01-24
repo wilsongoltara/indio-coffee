@@ -1,4 +1,4 @@
-import { FooterProps } from '../../../interfaces/props';
+import { FooterProps } from '@interfaces/props';
 import CustomizedAccordions from '../Accordion';
 import LinksFooter from './LinksFooter';
 import Social from './Social';

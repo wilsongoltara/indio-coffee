@@ -2,7 +2,7 @@ import { AppContext } from '@components/Layout';
 import { useContext } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { FaTimes } from 'react-icons/fa';
-import { MenuProps } from '../../../interfaces/props';
+import { MenuProps } from '@interfaces/props';
 import Links from '../Links';
 
 export default function Menu({ links }: MenuProps) {
