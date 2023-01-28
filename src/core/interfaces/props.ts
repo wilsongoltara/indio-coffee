@@ -31,3 +31,12 @@ export interface FooterProps {
   linksFooter: LinksFooter[];
   linksExtras: Link[]
 }
+
+export interface HeroProps {
+  bgHero: string;
+  hrefImage: string;
+  titleHero: string;
+  descriptionHero: string; 
+  buttonHero: string;
+  order?: boolean;
+}

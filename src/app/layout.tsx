@@ -34,7 +34,7 @@ export default function RootLayout({
       </head>
       <body>
         <Header />
-        <main className={myFont.className + 'max-w-[1650px]'}>{children}</main>
+        <main className={myFont.className}>{children}</main>
         <Footer />
       </body>
     </html>
