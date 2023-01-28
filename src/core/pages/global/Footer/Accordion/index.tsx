@@ -1,6 +1,8 @@
+'use client';
+
 import { SyntheticEvent, useState } from 'react';
-import { LinksFooterProps } from '@interfaces/props';
-import Links from '../Links';
+import { LinksFooterProps } from '~/core/interfaces/props';
+import Links from '~/core/pages/global/Links';
 import { Accordion, AccordionDetails, AccordionSummary } from './Styles';
 
 export default function Accordions({ linksFooter }: LinksFooterProps) {
@@ -15,7 +17,7 @@ export default function Accordions({ linksFooter }: LinksFooterProps) {
     <div className='lg:hidden'>
       {linksFooter?.map(({ nameAccordion, links }, index) => (
         <Accordion
-          key={index}
+          key={nameAccordion}
           expanded={expanded === `painel${index}`}
           onChange={handleChange(`painel${index}`)}
           className='py-3'

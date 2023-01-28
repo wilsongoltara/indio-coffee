@@ -1,4 +1,4 @@
-import { MenuProps } from '@interfaces/props';
+import { MenuProps } from '~/core/interfaces/props';
 import Links from '../Links';
 import Icons from './Icons';
 

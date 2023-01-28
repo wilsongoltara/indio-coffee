@@ -8,11 +8,6 @@
   margin: 0;
 }
 
-#__next {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
 .hamburg-menu {
   @apply flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-slate-50 to-gray-500 text-gray-700;
 }

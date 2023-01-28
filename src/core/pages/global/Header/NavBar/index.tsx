@@ -1,9 +1,9 @@
-import { linksMenu } from '@lib/links';
 import dynamic from 'next/dynamic';
+import { linksMenu } from '~/core/lib/links';
 import ButtonsBar from './ButtonsBar';
 import Menu from './Menu';
 
-const DynamicLogo = dynamic(() => import('@assets/Logo'));
+const DynamicLogo = dynamic(() => import('./Logo'));
 
 export default function NavBar() {
   return (

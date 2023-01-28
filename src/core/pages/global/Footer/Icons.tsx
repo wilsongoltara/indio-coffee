@@ -1,4 +1,4 @@
-import { BsFacebook, BsSpotify, BsPinterest, BsInstagram, BsYoutube, BsTwitter } from 'react-icons/bs';
+import { BsFacebook, BsInstagram, BsPinterest, BsSpotify, BsTwitter, BsYoutube } from 'react-icons/bs';
 
 export default function Icons() {
   return (

@@ -1,12 +1,13 @@
-import { AppContext } from '@components/Layout';
-import { useContext } from 'react';
+'use client';
+
+import { useState } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { FaTimes } from 'react-icons/fa';
-import { MenuProps } from '@interfaces/props';
-import Links from '../Links';
+import { MenuProps } from '~/core/interfaces/props';
+import Links from '../../Links';
 
 export default function Menu({ links }: MenuProps) {
-  const { nav, setNav } = useContext(AppContext);
+  const [nav, setNav] = useState(false);
 
   return (
     <menu>
