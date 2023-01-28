@@ -1,7 +1,9 @@
+import Rewards from './components/Rewards';
+
 export default function HomePage() {
   return(
-    <div className='flex items-center justify-center h-screen w-auto'>
-      <div></div>
+    <div className='flex flex-col items-center'>
+      <Rewards />
     </div>
   );
 }
