@@ -7,8 +7,8 @@ const DynamicLogo = dynamic(() => import('./Logo'));
 
 export default function NavBar() {
   return (
-    <nav className='flex justify-between items-center h-[72px] ml-5 md:h-20 lg:h-24 lg:ml-10'>
-      <div className='flex items-center justify-between w-full md:w-auto 2xl:m-28'>
+    <nav className='flex justify-between items-center h-[72px] ml-5 md:h-20 lg:h-24 w-full'>
+      <div className='flex items-center justify-between w-full md:w-auto 2xl:m-20'>
         <DynamicLogo />
         <Menu links={linksMenu} />
       </div>

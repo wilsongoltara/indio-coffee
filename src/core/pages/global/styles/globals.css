@@ -8,10 +8,6 @@
   margin: 0;
 }
 
-body {
-  max-width: 1650px;
-}
-
 @layer components {
   .hamburg-menu {
     @apply flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-slate-50 to-gray-500 text-gray-700;
