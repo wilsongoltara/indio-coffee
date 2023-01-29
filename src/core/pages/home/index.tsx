@@ -9,6 +9,7 @@ export default function HomePage() {
       <Hero {...heros.dayBoosters} />
       <Hero {...heros.dayBreak} />
       <Hero {...heros.yourFavorites} />
+      <div className='mt-10 mb-5'>*At participating stores.</div>
     </div>
   );
 }
