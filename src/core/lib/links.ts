@@ -1,4 +1,4 @@
-import { Link, LinksFooter } from '@interfaces/props';
+import { Link, LinksFooter } from '~/core/interfaces/props';
 
 export const linksMenu: Link[] = [
   {
